@@ -5,7 +5,7 @@ dbus-daemon --session --fork --address="$DBUS_SESSION_BUS_ADDRESS" --print-addre
 signal-cli --config=/home/user/signal-cli-config daemon >/dev/null &
 disown
 echo "Waiting for signal-cli to settle..."
-sleep 12s
+sleep 20s
 cd "/home/user/worker"
 echo "Starting main.py..."
 exec python3 main.py
