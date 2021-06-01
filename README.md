@@ -33,7 +33,7 @@ You need an online private server with Docker and Docker-compose installed. Crea
     wget https://github.com/Matteljay/signalbot-lto/raw/main/docker-compose.yml
     nano docker-compose.yml
 
-Make sure to personalize your `docker-compose.yml` by changing the variable `LTO_SERVER_IPPORT` to any LTO Network server you'd like to monitor. If you're not running your own LTO server but would like to test this project anyway, pick a server from [this list](https://lto.tools/nodes/) with an open P2P port (`:6869`).
+Make sure to personalize your `docker-compose.yml` by changing the variable `LTO_SERVER_IPPORT` to any LTO Network server you'd like to monitor. The `INTERVAL_SECONDS` variable determines the time interval between checks of the LTO server. If you're not running your own LTO server but would like to test this project anyway, pick a server from [this list](https://lto.tools/nodes/) with an open P2P port (`:6869`).
 
 You now need to register a phone SIM card with signal-cli. This is explained [here](https://github.com/AsamK/signal-cli#usage).
 
