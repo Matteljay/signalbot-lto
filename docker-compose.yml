@@ -1,0 +1,15 @@
+version: "3.5"
+services:
+    signalbot-lto:
+        image: matteljay/signalbot-lto
+        container_name: signalbot-lto
+        restart: always
+        user: user
+        #entrypoint: sleep 1h # for signal-cli setup
+        environment:
+            LTO_SERVER_IPPORT: CHANGE_ME:6869
+            INTERVAL_SECONDS: 60
+        volumes:
+            - "./signal-cli-config:/home/user/signal-cli-config"
+            #- "./worker:/home/user/worker"
+
