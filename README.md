@@ -1,11 +1,13 @@
 # SignalBot LTO
+
+### NOTICE: LTO has rebranded to EQTY
+
 ## Signal chat bot for server monitoring
 
 - License: MIT License
 - Author: Matteljay
 - Language: Python
 - IDE: Visual Studio Code
-- Homepage: https://libersystems.com
 
 ## Table of contents
 
